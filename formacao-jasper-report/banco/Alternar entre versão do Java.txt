@@ -1,0 +1,15 @@
+1 - No cmd ou prompt do Windows execute:
+
+  1.1 - set JAVA_HOME=C:\Program Files\Java\jdk-22
+  2.1 - set PATH=%JAVA_HOME%\bin;%PATH%
+
+2 - Confira se mudou com o comando:
+  1 - java --version
+
+No seguinte local:
+
+C:\Program Files\Common Files\Oracle\Java
+
+Renomeie a pasta Java para Java_old, ficando igual abaixo para evitar que os programas rodem com a JRE que está em cache.
+
+C:\Program Files\Common Files\Oracle\Java_old

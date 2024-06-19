@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio-usuario-grafico-pizza" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2c910825-6250-4d7d-a014-688aaec9d24e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="formacao-jasper-report"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="333"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="659"/>
+	<queryString>
+		<![CDATA[select sum(1) as qtde, idade from usuario where idade is not null group by idade]]>
+	</queryString>
+	<field name="qtde" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="qtde"/>
+		<property name="com.jaspersoft.studio.field.label" value="qtde"/>
+	</field>
+	<field name="idade" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idade"/>
+		<property name="com.jaspersoft.studio.field.label" value="idade"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuario"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="555" splitType="Stretch">
+			<pieChart>
+				<chart evaluationTime="Report" theme="aegean">
+					<reportElement x="20" y="0" width="730" height="550" uuid="e559abca-abe5-48f1-8682-83b803f7d0f5"/>
+					<chartTitle>
+						<titleExpression><![CDATA["Gráfico de pessoas agrupadas por idade"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle>
+						<subtitleExpression><![CDATA["Valores da legenda se refere ao agrupamento de idade (Valor idade)"]]></subtitleExpression>
+					</chartSubtitle>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<dataset resetType="Report"/>
+					<keyExpression><![CDATA[$F{idade}]]></keyExpression>
+					<valueExpression><![CDATA[$F{idade}]]></valueExpression>
+					<labelExpression><![CDATA["Qtde: " + $F{qtde}]]></labelExpression>
+				</pieDataset>
+				<piePlot>
+					<plot/>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+		</band>
+	</title>
+</jasperReport>
