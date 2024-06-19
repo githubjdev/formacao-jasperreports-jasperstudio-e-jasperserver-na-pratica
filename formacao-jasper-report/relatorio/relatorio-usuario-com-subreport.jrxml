@@ -135,7 +135,7 @@ order by salario]]>
 					<subreportParameterExpression><![CDATA[$F{id}.longValue()]]></subreportParameterExpression>
 				</subreportParameter>
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
-				<subreportExpression><![CDATA["relatorio-usuario-com-subreport-filho.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA["relatorio/relatorio-usuario-com-subreport-filho.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</detail>
