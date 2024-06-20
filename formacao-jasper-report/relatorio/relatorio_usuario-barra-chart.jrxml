@@ -19,14 +19,20 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="0" width="120" height="79" uuid="7942b0a4-1f56-4ac8-b63d-df4f17d6a4b1"/>
+				<imageExpression><![CDATA["logotipo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="253" y="23" width="437" height="30" uuid="e4a2d4d1-53e5-49f7-b73a-2d40fa5a905c"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Jdev Treinamento]]></text>
+			</staticText>
+		</band>
 	</title>
-	<pageHeader>
-		<band height="35" splitType="Stretch"/>
-	</pageHeader>
-	<columnHeader>
-		<band height="61" splitType="Stretch"/>
-	</columnHeader>
 	<detail>
 		<band height="244" splitType="Stretch">
 			<barChart>
@@ -62,13 +68,4 @@
 			</barChart>
 		</band>
 	</detail>
-	<columnFooter>
-		<band height="45" splitType="Stretch"/>
-	</columnFooter>
-	<pageFooter>
-		<band height="54" splitType="Stretch"/>
-	</pageFooter>
-	<summary>
-		<band height="42" splitType="Stretch"/>
-	</summary>
 </jasperReport>
