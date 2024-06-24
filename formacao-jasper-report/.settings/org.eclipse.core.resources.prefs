@@ -1,7 +1,10 @@
 eclipse.preferences.version=1
 encoding//relatorio/relatorio-1.jrxml=UTF-8
 encoding//relatorio/relatorio-usuario-agrupamento.jrxml=UTF-8
+encoding//relatorio/relatorio-usuario-com-subreport-filho.jrxml=UTF-8
 encoding//relatorio/relatorio-usuario-com-subreport.jrxml=UTF-8
 encoding//relatorio/relatorio-usuario-grafico-pizza.jrxml=UTF-8
 encoding//relatorio/relatorio-usuario.jrxml=UTF-8
+encoding//relatorio/relatorio_usuario-barra-chart.jrxml=UTF-8
+encoding//relatorio/relatorio_usuario_tabela.jrxml=UTF-8
 encoding/<project>=UTF-8
