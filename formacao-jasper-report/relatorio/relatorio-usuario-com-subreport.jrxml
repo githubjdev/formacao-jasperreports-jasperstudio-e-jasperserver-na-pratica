@@ -6,6 +6,7 @@
 	<parameter name="VALOR_SALARIO" class="java.lang.Double" isForPrompting="false"/>
 	<parameter name="SALARIO_INI" class="java.lang.Double"/>
 	<parameter name="SALARIO_FIM" class="java.lang.Double"/>
+	<parameter name="PARAMETRO_PASTA_REPORT" class="java.lang.String"/>
 	<queryString language="SQL">
 		<![CDATA[SELECT *
 FROM usuario 
@@ -135,7 +136,7 @@ order by salario]]>
 					<subreportParameterExpression><![CDATA[$F{id}.longValue()]]></subreportParameterExpression>
 				</subreportParameter>
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
-				<subreportExpression><![CDATA["relatorio/relatorio-usuario-com-subreport-filho.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA[$P{PARAMETRO_PASTA_REPORT} + "relatorio-usuario-com-subreport-filho.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</detail>

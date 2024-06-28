@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio_usuario_tabela" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ca3259b5-b448-4382-a79e-dc9b1d4b30db">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="formacao-jasper-report"/>
@@ -194,9 +194,9 @@
 		</band>
 	</detail>
 	<lastPageFooter>
-		<band height="204">
+		<band height="459">
 			<componentElement>
-				<reportElement x="170" y="4" width="550" height="200" uuid="b6b3226e-691f-4cf7-aca2-732884a5bb74">
+				<reportElement x="170" y="10" width="420" height="160" isPrintWhenDetailOverflows="true" uuid="b6b3226e-691f-4cf7-aca2-732884a5bb74">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
@@ -206,36 +206,36 @@
 					<datasetRun subDataset="Dataset1" uuid="4a66aa95-96b2-4699-bc1b-2f5e0ebdbc6c">
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
-					<jr:column width="280" uuid="e51a40e3-1041-492f-82c7-52491baec025">
+					<jr:column width="220" uuid="e51a40e3-1041-492f-82c7-52491baec025">
 						<jr:tableHeader style="Table_TH" height="30"/>
 						<jr:tableFooter style="Table_TH" height="30"/>
 						<jr:columnHeader style="Table_CH" height="30">
 							<staticText>
-								<reportElement x="0" y="0" width="280" height="30" uuid="ea322afa-da93-4490-a054-fd4991c4a226"/>
+								<reportElement x="0" y="0" width="220" height="30" isPrintWhenDetailOverflows="true" uuid="ea322afa-da93-4490-a054-fd4991c4a226"/>
 								<text><![CDATA[Quantidade]]></text>
 							</staticText>
 						</jr:columnHeader>
 						<jr:columnFooter style="Table_CH" height="30"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
-								<reportElement x="0" y="0" width="280" height="30" uuid="f13ead51-c0f6-4e71-8206-ae6ce63ce366"/>
+								<reportElement x="0" y="0" width="220" height="30" uuid="f13ead51-c0f6-4e71-8206-ae6ce63ce366"/>
 								<textFieldExpression><![CDATA[$F{qtd}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="210" uuid="900324a3-b189-441d-ad73-29d921c01f64">
+					<jr:column width="180" uuid="900324a3-b189-441d-ad73-29d921c01f64">
 						<jr:tableHeader style="Table_TH" height="30"/>
 						<jr:tableFooter style="Table_TH" height="30"/>
 						<jr:columnHeader style="Table_CH" height="30">
 							<staticText>
-								<reportElement x="0" y="0" width="210" height="30" uuid="de33d73a-5e34-4448-bc6f-fe62ea6103c2"/>
+								<reportElement x="0" y="0" width="180" height="30" uuid="de33d73a-5e34-4448-bc6f-fe62ea6103c2"/>
 								<text><![CDATA[Idade]]></text>
 							</staticText>
 						</jr:columnHeader>
 						<jr:columnFooter style="Table_CH" height="30"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
-								<reportElement x="0" y="0" width="210" height="30" uuid="a60b7019-9d06-448b-97ef-d416d5f738d6"/>
+								<reportElement x="0" y="0" width="180" height="30" uuid="a60b7019-9d06-448b-97ef-d416d5f738d6"/>
 								<textFieldExpression><![CDATA[$F{idade}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
