@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio_usuario-barra-chart-jrbcds" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="545467bd-bf65-40b2-a7be-8f9bb38d4128">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="PARAMETRO_PASTA_REPORT" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="idade" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idade]]></fieldDescription>
+	</field>
+	<field name="qtde" class="java.lang.Integer">
+		<fieldDescription><![CDATA[qtde]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<fieldDescription><![CDATA[estado]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="0" width="120" height="79" uuid="7942b0a4-1f56-4ac8-b63d-df4f17d6a4b1"/>
+				<imageExpression><![CDATA[$P{PARAMETRO_PASTA_REPORT} + "logotipo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="253" y="23" width="437" height="30" uuid="e4a2d4d1-53e5-49f7-b73a-2d40fa5a905c"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Jdev Treinamento]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="244" splitType="Stretch">
+			<barChart>
+				<chart evaluationTime="Report" theme="aegean">
+					<reportElement x="80" y="20" width="610" height="210" uuid="f604d498-0758-4623-9c86-c0fddeaf1e87"/>
+					<chartTitle>
+						<titleExpression><![CDATA["Gráfico de quantidade de pessoas por idade"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle>
+						<subtitleExpression><![CDATA["Valor da idade descrito na legenda"]]></subtitleExpression>
+					</chartSubtitle>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Idade: " + $F{idade}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{qtde}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{idade}]]></valueExpression>
+						<labelExpression><![CDATA["Qtde"]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</detail>
+</jasperReport>
