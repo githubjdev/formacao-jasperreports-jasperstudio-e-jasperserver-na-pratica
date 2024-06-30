@@ -108,7 +108,7 @@ order by estado]]>
 	<lastPageFooter>
 		<band height="233">
 			<crosstab>
-				<reportElement x="0" y="0" width="801" height="100" isPrintWhenDetailOverflows="true" uuid="0b9087af-3275-4517-b54e-0d8d50657cc7">
+				<reportElement x="0" y="0" width="760" height="100" isPrintWhenDetailOverflows="true" uuid="0b9087af-3275-4517-b54e-0d8d50657cc7">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.crosstab.style.header" value="Crosstab_CH"/>
 					<property name="com.jaspersoft.studio.crosstab.style.group" value="Crosstab_CG"/>
@@ -143,7 +143,7 @@ order by estado]]>
 					<crosstabColumnHeader>
 						<cellContents mode="Opaque" style="Crosstab_CH">
 							<textField>
-								<reportElement x="0" y="0" width="170" height="20" uuid="b8e07577-2695-4a25-a79c-879dc63c0a88"/>
+								<reportElement x="0" y="0" width="110" height="20" uuid="b8e07577-2695-4a25-a79c-879dc63c0a88"/>
 								<textFieldExpression><![CDATA[$V{idade}]]></textFieldExpression>
 							</textField>
 						</cellContents>
@@ -151,7 +151,7 @@ order by estado]]>
 					<crosstabTotalColumnHeader>
 						<cellContents mode="Opaque" style="Crosstab_CT">
 							<staticText>
-								<reportElement x="0" y="0" width="120" height="20" forecolor="#FFFFFF" uuid="47ab187e-20bb-430e-8dc6-b3cf6d801f49"/>
+								<reportElement x="0" y="0" width="80" height="20" forecolor="#FFFFFF" uuid="47ab187e-20bb-430e-8dc6-b3cf6d801f49"/>
 								<text><![CDATA[Total p/ estado]]></text>
 							</staticText>
 						</cellContents>
@@ -160,34 +160,34 @@ order by estado]]>
 				<measure name="qtde_MEASURE" class="java.lang.Long" calculation="Sum">
 					<measureExpression><![CDATA[$F{qtde}]]></measureExpression>
 				</measure>
-				<crosstabCell width="170" height="20">
+				<crosstabCell width="110" height="20">
 					<cellContents mode="Opaque" style="Crosstab_CD">
 						<textField>
-							<reportElement x="0" y="0" width="170" height="20" uuid="9b66088e-969d-4785-99e2-c8b6d01de2d9"/>
+							<reportElement x="0" y="0" width="110" height="20" uuid="9b66088e-969d-4785-99e2-c8b6d01de2d9"/>
 							<textFieldExpression><![CDATA[$V{qtde_MEASURE}]]></textFieldExpression>
 						</textField>
 					</cellContents>
 				</crosstabCell>
-				<crosstabCell width="120" height="20" columnTotalGroup="idade">
+				<crosstabCell width="80" height="20" columnTotalGroup="idade">
 					<cellContents mode="Opaque" style="Crosstab_CT">
 						<textField>
-							<reportElement x="0" y="0" width="120" height="20" forecolor="#FFFFFF" uuid="924506f9-b610-4425-b739-704fe7ef04d7"/>
+							<reportElement x="0" y="0" width="80" height="20" forecolor="#FFFFFF" uuid="924506f9-b610-4425-b739-704fe7ef04d7"/>
 							<textFieldExpression><![CDATA[$V{qtde_MEASURE}]]></textFieldExpression>
 						</textField>
 					</cellContents>
 				</crosstabCell>
-				<crosstabCell width="170" height="20" rowTotalGroup="estado">
+				<crosstabCell width="110" height="20" rowTotalGroup="estado">
 					<cellContents mode="Opaque" style="Crosstab_CT">
 						<textField>
-							<reportElement x="0" y="0" width="170" height="20" forecolor="#FFFFFF" uuid="9f950e08-451a-4a82-af3a-041066648bc2"/>
+							<reportElement x="0" y="0" width="110" height="20" forecolor="#FFFFFF" uuid="9f950e08-451a-4a82-af3a-041066648bc2"/>
 							<textFieldExpression><![CDATA[$V{qtde_MEASURE}]]></textFieldExpression>
 						</textField>
 					</cellContents>
 				</crosstabCell>
-				<crosstabCell width="120" height="20" rowTotalGroup="estado" columnTotalGroup="idade">
+				<crosstabCell width="80" height="20" rowTotalGroup="estado" columnTotalGroup="idade">
 					<cellContents mode="Opaque" style="Crosstab_CT">
 						<textField>
-							<reportElement x="0" y="0" width="120" height="20" forecolor="#FFFFFF" uuid="5a01d50a-1a45-4312-b7ba-db9a9e8bacda"/>
+							<reportElement x="0" y="0" width="80" height="20" forecolor="#FFFFFF" uuid="5a01d50a-1a45-4312-b7ba-db9a9e8bacda"/>
 							<textFieldExpression><![CDATA[$V{qtde_MEASURE}]]></textFieldExpression>
 						</textField>
 					</cellContents>
