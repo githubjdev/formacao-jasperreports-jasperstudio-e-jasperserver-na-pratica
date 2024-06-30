@@ -20,11 +20,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>net.sf.jasperreports.nature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>relatorio-usuario.jrprint</name>
-			<type>1</type>
-			<location>C:/Users/alex_/git/projeto-jasper-report-java-spring-boot/jasperreport/target/classes/relatorios/relatorio-usuario.jrprint</location>
-		</link>
-	</linkedResources>
 </projectDescription>
