@@ -191,7 +191,7 @@
 		</band>
 	</detail>
 	<lastPageFooter>
-		<band height="459">
+		<band height="428">
 			<componentElement>
 				<reportElement x="170" y="10" width="420" height="160" isPrintWhenDetailOverflows="true" uuid="b6b3226e-691f-4cf7-aca2-732884a5bb74">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
@@ -201,7 +201,7 @@
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
 					<datasetRun subDataset="Dataset1" uuid="bd5e4c4e-c60f-45cb-9a70-51d72973caf5">
-						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{lista_data_set_user}) ]]></dataSourceExpression>
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{lista_data_set_user})]]></dataSourceExpression>
 					</datasetRun>
 					<jr:column width="220" uuid="e51a40e3-1041-492f-82c7-52491baec025">
 						<jr:tableHeader style="Table_TH" height="30"/>
