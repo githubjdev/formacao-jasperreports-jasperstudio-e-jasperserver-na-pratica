@@ -30,6 +30,9 @@
 	<field name="telefones" class="java.util.List">
 		<fieldDescription><![CDATA[telefones]]></fieldDescription>
 	</field>
+	<field name="foto" class="byte[]">
+		<fieldDescription><![CDATA[foto]]></fieldDescription>
+	</field>
 	<variable name="SOMA_SALARIO" class="java.lang.Double" resetType="Page" calculation="Sum">
 		<variableExpression><![CDATA[$F{salario}]]></variableExpression>
 	</variable>
@@ -95,7 +98,7 @@
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="21" splitType="Stretch">
+		<band height="71" splitType="Stretch">
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="0" y="-1" width="70" height="20" uuid="5492afbc-d643-49cb-be56-ce541e3d5a78">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa0a20c5-d5e3-41d1-8044-b684a3785432"/>
@@ -124,6 +127,10 @@
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{salario}]]></textFieldExpression>
 			</textField>
+			<image onErrorType="Icon">
+				<reportElement x="2" y="21" width="50" height="50" uuid="cf499942-d0df-47f0-bb4b-cf4cf7af9de0"/>
+				<imageExpression><![CDATA[$F{foto}]]></imageExpression>
+			</image>
 		</band>
 	</detail>
 	<columnFooter>

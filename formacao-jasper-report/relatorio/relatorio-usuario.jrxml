@@ -33,6 +33,21 @@ order by salario]]>
 		<property name="com.jaspersoft.studio.field.label" value="salario"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="usuario"/>
 	</field>
+	<field name="idade" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idade"/>
+		<property name="com.jaspersoft.studio.field.label" value="idade"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuario"/>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuario"/>
+	</field>
+	<field name="foto" class="byte[]">
+		<property name="com.jaspersoft.studio.field.name" value="foto"/>
+		<property name="com.jaspersoft.studio.field.label" value="foto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuario"/>
+	</field>
 	<variable name="SOMA_SALARIO" class="java.lang.Double" resetType="Page" calculation="Sum">
 		<variableExpression><![CDATA[$F{salario}]]></variableExpression>
 	</variable>
@@ -98,7 +113,7 @@ order by salario]]>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="21" splitType="Stretch">
+		<band height="80" splitType="Stretch">
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="0" y="-1" width="70" height="20" uuid="5492afbc-d643-49cb-be56-ce541e3d5a78">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa0a20c5-d5e3-41d1-8044-b684a3785432"/>
@@ -127,6 +142,10 @@ order by salario]]>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{salario}]]></textFieldExpression>
 			</textField>
+			<image onErrorType="Icon">
+				<reportElement x="0" y="30" width="50" height="50" uuid="fee85faa-062a-4744-9dfd-df5358f5bc05"/>
+				<imageExpression><![CDATA[$F{foto}]]></imageExpression>
+			</image>
 		</band>
 	</detail>
 	<columnFooter>
