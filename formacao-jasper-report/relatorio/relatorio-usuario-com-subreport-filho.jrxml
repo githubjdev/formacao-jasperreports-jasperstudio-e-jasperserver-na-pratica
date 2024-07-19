@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio-usuario-com-subreport-filho" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="80e92dbf-6f2a-49ec-b81c-7da975d30e7b">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="formacao-jasper-report"/>
@@ -39,7 +39,7 @@
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="87" splitType="Stretch">
+		<band height="23" splitType="Stretch">
 			<textField>
 				<reportElement x="170" y="0" width="50" height="15" uuid="b9e5aa05-d7fe-46f6-bd96-6fe09b6f5310">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -58,12 +58,6 @@
 				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="2of7" drawText="false" checksumRequired="false">
 					<jr:codeExpression><![CDATA[$F{fone}]]></jr:codeExpression>
 				</jr:barbecue>
-			</componentElement>
-			<componentElement>
-				<reportElement x="380" y="21" width="129" height="66" uuid="94037d00-740d-43d8-8666-da4fa4093f20"/>
-				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
-					<jr:codeExpression><![CDATA[$F{fone}]]></jr:codeExpression>
-				</jr:QRCode>
 			</componentElement>
 		</band>
 	</detail>
