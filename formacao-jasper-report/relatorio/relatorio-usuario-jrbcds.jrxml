@@ -46,7 +46,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="2" y="10" width="552" height="34" uuid="2db15133-ef1a-4647-865d-a116d309781c"/>
+				<reportElement x="2" y="10" width="552" height="34" backcolor="#6666FF" uuid="2db15133-ef1a-4647-865d-a116d309781c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="16"/>
 				</textElement>
